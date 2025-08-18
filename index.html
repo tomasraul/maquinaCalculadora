@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculador</h1>
+    </header>
+    <main>
+        
+        <section class="container">
+            <div class="txt">
+                <input type="text" name="n" id="txtn" readonly><br><br>
+            </div>
+            <article>
+                <div> 
+                    <input type="button" id= "c" value="C" onclick="limpar()">
+                    <input type="button" id= "n/" value="/" onclick="dividir()">
+                    <input type="button" id= "x" value="x" onclick="mult()">
+                    <input type="button" id= "del" value="del" onclick="del()">
+                </div>
+                <div>
+                    <input type="button" id= "n7" value="7" >
+                    <input type="button" id= "n8" value="8">
+                    <input type="button" id= "n9" value="9">
+                    <input type="button" id= "menos" value="-" onclick="menos()">
+                </div>
+                <div>
+                    <input type="button" id= "n4" value="4">
+                    <input type="button" id= "n5" value="5">
+                    <input type="button" id= "n6" value="6">
+                    <input type="button" id= "mais" value="+" onclick="mais()">
+                </div>
+                <div class="igual">
+                    <input type="button" id= "n1" value="1">
+                    <input type="button" id= "n2" value="2">
+                    <input type="button" id= "n3" value="3">
+                    <input type="button" id= "igual" value="=" onclick="igual()">
+                </div>
+                <div class="virg">
+                    <input type="button" id= "n0" value="0">
+                    <input type="button" id= "virg" value="," onclick="virg()">
+                </div>
+            </article>
+        </section>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
